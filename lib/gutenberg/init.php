@@ -56,6 +56,13 @@ function genesis_sample_block_editor_styles() {
 		CHILD_THEME_VERSION
 	);
 
+	wp_enqueue_script(
+		'genesis-sample-editor',
+		get_stylesheet_directory_uri() . '/lib/gutenberg/js/editor.js',
+		array( 'wp-blocks' ),
+		CHILD_THEME_VERSION
+	);
+
 }
 
 // Add support for editor styles.
