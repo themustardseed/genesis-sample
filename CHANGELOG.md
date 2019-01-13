@@ -1,3 +1,13 @@
+# Genesis Sample Sass Changelog
+
+## [2.7.1] - 2019-01-13
+* New: Add scss folder with style.scss and /partials
+* New: Add scss/gutenberg with front-end.scss and style-editor.scss
+* New: Add scss/woocommerce with genesis-sample-woocommerce.scss
+* New: Add config.codekit3 configuration file
+
+Genesis Sample Changelog follows
+
 # Genesis Sample Theme Changelog
 
 ## [2.7.1] - 2018-12-20
