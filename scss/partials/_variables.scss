@@ -1,0 +1,318 @@
+// Base Colors
+$white: #fff;
+$light-gray: #f5f5f5;
+$light-gray-2: #eee;
+$light-gray-3: #ddd;
+$medium-gray: #999;
+$medium-gray-2: #777;
+$medium-gray-3: #666;
+$dark-gray: #333;
+$black: #000;
+$blue: #0073e5;
+
+// Font colors
+// Body
+$body--font-color: $dark-gray;
+// Gutenberg Blocks
+$gb__button--font-color-hover: $white;
+$gb__button--font-color: $white;
+$gb__cite__solid--font-color: $white;
+$gb__cite--font-color: $medium-gray-3;
+$gb__cover--font-color: $white;
+$gb__figcaption--font-color: $medium-gray-3;
+$gb__light-text--color: $light-gray;
+$gb__light-text--link-color: $white;
+$gb__pullquote__solid--font-color: $white;
+// WooCommerce
+$woo__account--nav-active--font-color: $dark-gray;
+$woo__breadcrumb--font-color-hover: $blue;
+$woo__breadcrumb--font-color: $black;
+$woo__button--font-color-disabled-hover: $black;
+$woo__button--font-color-disabled: $white;
+$woo__button--font-color-hover: $white;
+$woo__button--font-color: $white;
+$woo__tab--font-color-hover: $blue;
+$woo__tab--font-color: $black;
+// Others
+$archive-pagination--font-color-hover: $white;
+$archive-pagination--font-color: $dark-gray;
+$button--font-color-hover: $white;
+$button--font-color: $white;
+$disabled--font-color: $medium-gray-2;
+$entry-title__link--font-color-hover: $blue;
+$entry-title__link--font-color: $dark-gray;
+$forms--font-color: $dark-gray;
+$gs-faq__question--font-color-hover: $blue;
+$gs-faq__question--font-color: $dark-gray;
+$link--font-color-hover: $dark-gray;
+$link--font-color: $blue;
+$mark--font-color: $dark-gray;
+$menu-toggle--font-color-hover: $blue;
+$menu-toggle--font-color: $dark-gray;
+$nav-menu--font-color-hover: $blue;
+$nav-menu--font-color: $dark-gray;
+$nav-menu--highlight--font-color: $white;
+$sidebar__widget-title--font-color: $dark-gray;
+$site-title__link--font-color: $dark-gray;
+$sub-menu-toggle--font-color-hover: $blue;
+$sub-menu-toggle--font-color: $dark-gray;
+
+// Background colors
+// Body
+$body--background-color: $white;
+// Gutenberg Blocks
+$gb__button--background-color-hover: $blue;
+$gb__button--background-color: $dark-gray;
+$gb__pullquote__solid--background-color: $dark-gray;
+// WooCommerce
+$woo__button--background-color-disabled-hover: $light-gray-2;
+$woo__button--background-color-disabled: $black;
+$woo__button--background-color-hover: $blue;
+$woo__button--background-color: $dark-gray;
+$woo__cart--background-color: $light-gray;
+$woo__h3--font-size: $black;
+$woo__message--background-color: $light-gray;
+$woo__on-sale--background-color: $blue;
+$woo__payment-box--background-color: $light-gray-2;
+$woo__price-filter--background-color: $light-gray-2;
+$woo__price-filter--before--background-color: $blue;
+$woo__price-filter--slider--background-color: $blue;
+$woo__product--font-color: $blue;
+$woo__tab--background-color--active-wide: $white;
+$woo__tab--background-color-wide: $light-gray;
+$woo__tab--background-color: $white;
+// Others
+$archive-pagination--background-color-hover: $dark-gray;
+$archive-pagination--background-color: $light-gray;
+$author-box--background-color: $light-gray;
+$button--background-color-hover: $blue;
+$button--background-color: $dark-gray;
+$code--background-color: $light-gray;
+$disabled--background-color: $light-gray-2;
+$enews__sidebar--background-color: $light-gray;
+$footer-widgets--background-color: $white;
+$forms__background-color: $white;
+$mark--background-color: $light-gray-3;
+$nav-menu__sub-menu__link--background-color: $white;
+$nav-menu--highlight--background-color-hover: $blue;
+$nav-menu--highlight--background-color: $dark-gray;
+$site-footer--background-color: $white;
+$site-header--background-color: $white;
+$sticky--background-color: $light-gray;
+
+// Font families
+$body--font-family: "Source Sans Pro", sans-serif;
+$headings--font-family: "Source Sans Pro", sans-serif;
+$mono--font-family: monospace;
+
+// Font Styles
+$gb__figcaption--font-style: italic;
+$gb__quote--font-style: italic;
+$gb__cite--font-style: italic;
+$gb__pullquote--font-style: italic;
+
+// Screen and Column Widths
+$site--column-width: 702px;
+$alignwide--negative-margin: 180px; // each side
+$editor-regular-content-width: $site--column-width + 30px;
+$alignwide-width: $site--column-width + ( 2 * $alignwide--negative-margin );
+$editor-alignwide-width: $alignwide-width + 30px;
+$desktop-up-width: 1140px;
+
+// Media Queries
+@mixin width-small-phone-down {
+	@media only screen and (max-width: 510px) {
+		@content;
+	}
+}
+
+@mixin width-small-phone-up {
+	@media only screen and (min-width: 510px) {
+		@content;
+	}
+}
+
+@mixin width-phone-down {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+@mixin width-phone-up {
+	@media only screen and (min-width: 600px) {
+		@content;
+	}
+}
+
+@mixin width-tablet-portrait-up {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin width-tablet-landscape-up {
+	@media only screen and (min-width: 960px) {
+		@content;
+	}
+}
+
+@mixin width-gutenberg-alignwide {
+	@media only screen and (min-width: $alignwide-width) {
+		@content;
+	}
+}
+
+@mixin width-desktop-up {
+	@media only screen and (min-width: $desktop-up-width) {
+		@content;
+	}
+}
+
+// Border styles
+$site--border-width: 1px;
+$site--border-style: solid;
+$site--border-color: $light-gray-2;
+$focus--border-color: $medium-gray;
+$form--border-color: $light-gray-3;
+$woo__message--border-color: $blue;
+$woo__tab--border-width: 1px;
+
+
+@mixin site--border-bottom {
+    border-bottom: $site--border-width $site--border-style $site--border-color;
+}
+@mixin site--border-top {
+    border-top: $site--border-width $site--border-style $site--border-color;
+}
+@mixin site--border {
+    border: $site--border-width $site--border-style $site--border-color;
+}
+@mixin focus--border {
+    border: $site--border-width $site--border-style $focus--border-color;
+}
+@mixin form--border {
+    border: $site--border-width $site--border-style $form--border-color;
+}
+
+// Box Shadows
+$box-shadow-blur-radius: 20px;
+$button--box-shadow-blur-radius: 200px;
+$box-shadow-opacity: 0.05;
+$button--box-shadow-opacity: 0.15;
+$block--box-shadow-opacity: 0.1;
+
+@mixin site--box-shadow {
+    box-shadow: 0 0 $box-shadow-blur-radius rgba(0, 0, 0, $box-shadow-opacity);
+}
+@mixin block--box-shadow {
+	box-shadow: 0 0 $box-shadow-blur-radius rgba(0, 0, 0, $block--box-shadow-opacity);
+}
+
+@mixin button--box-shadow {
+	box-shadow: inset 0 0 $button--box-shadow-blur-radius rgba(230, 230, 230, $button--box-shadow-opacity);
+}
+
+// Font sizes - px
+$body--font-size: 18px;
+// Gutenberg Blocks
+$gb--small-font-size: 12px;
+$gb--regular-font-size: 16px;
+$gb--large-font-size: 20px;
+$gb--larger-font-size: 24px;
+$gb__button--font-size: 16px;
+$gb__cover--font-size: 48px;
+$gb__figcaption--font-size: 16px;
+$gb__quote--font-size: 21px;
+$gb__quote__large--font-size: 32px;
+$gb__pullquote--font-size: 32px;
+$gb__cite--font-size: 16px;
+$gb__preformatted--font-size: 16px;
+$gb__verse--font-size: 16px;
+$gb__table--font-size: 18px;
+// WooCommerce
+$woo__account-address--font-size: 20px;
+$woo__account-address--title--font-size: 26px;
+$woo__breadcrumb--font-size: 18px;
+$woo__button--font-size: 16px;
+$woo__quantity--font-size: 20px;
+$woo__reviewer--font-size: 12px;
+// Headings
+$h1--font-size: 30px;
+$h2--font-size: 27px;
+$h3--font-size: 24px;
+$h4--font-size: 20px;
+$h5--font-size: 18px;
+$h6--font-size: 16px;
+// Others
+$after-entry__breadcrumb--font-size: 16px;
+$archive-author-box__entry-title--font-size: 20px;
+$archive-pagination--font-size: 16px;
+$blockquote__before--font-size: 30px;
+$breadcrumb--font-size: 16px;
+$button--font-size: 16px;
+$comments--font-size: 18px;
+$enews-widget__input--font-size: 16px;
+$entry-content__caption--font-size: 14px;
+$entry-meta--font-size: 16px;
+$entry-title--font-size: 30px;
+$featured-content__entry-title--font-size: 16px;
+$footer-widgets--font-size: 18px;
+$forms--font-size: 18px;
+$nav-menu--font-size: 15px;
+$nav-menu__sub-menu__link--font-size: 14px;
+$sidebar--font-size: 16px;
+$site-title--font-size: 20px;
+$site-footer--font-size: 15px;
+$widget-title--font-size: 18px;
+
+// Font weights
+$font-weight--regular: 400;
+$font-weight--semibold: 600;
+$font-weight--bold: 700;
+
+// Line heights
+$gb__table--line-height: 2;
+$gb__block-quote--line-height: 1.8;
+$line-height--large: 1.75;
+$line-height--normal: 1.625;
+$line-height--medium: 1.5;
+$line-height--medium-small: 1.4;
+$line-height--small: 1.2;
+$line-height--smaller: 1;
+$nav-menu__toggle--line-height: 20px;
+
+// Typography Margins
+$headings--margin: 0 0 20px;
+$h4--margin-top: 40px;
+
+// Gb Block Paddings
+$gb__full-width--padding: 0 30px;
+
+// Gb Drop Caps
+@mixin standard--drop-cap {
+	margin: 0.02em 0.08em 0 -0.08em;
+}
+
+@mixin large-small--drop-cap {
+	margin-right: 0.01em;
+}
+
+// Gb Short Separator
+$gb__separator-short--width: 100px;
+
+// Buttons
+
+@mixin standard-button {
+	background-color:$button--background-color;
+	border: 0;
+	border-radius: 5px;
+	color: $button--font-color;
+	cursor: pointer;
+	font-size: $button--font-size;
+	font-weight: $font-weight--semibold;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	white-space: normal;
+	width: auto;
+}
