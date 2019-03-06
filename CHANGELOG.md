@@ -5,7 +5,7 @@ Requires Genesis 2.8.0+.
 
 * New: Block-based homepage layout.
 * New: Auto homepage setup upon theme activation using the new onboarding feature from Genesis 2.8.0. (See `config/onboarding.php`.)
-* New: ‚ÄúBlocks‚Äù page template for use with the block editor. The template removes the title and breadcrumbs, and forces a full-width layout.
+* New: ìBlocksî page template for use with the block editor. The template removes the title and breadcrumbs, and forces a full-width layout.
 * New: Load configuration with the new `genesis_get_config()` function from Genesis 2.8.0. (See `functions.php` and the `config/` folder.)
 * New: Add `has-no-blocks` body class if singular post/page contains no blocks.
 * New: Add `first-block-[block-name]` body class. Helps remove top padding when blocks such as the Cover block are first on the page.

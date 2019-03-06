@@ -320,12 +320,14 @@ input[type="submit"],
 textarea:focus,
 .button,
 .gallery img {
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 a {
   color: #0073e5;
   text-decoration: underline;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -1301,6 +1303,7 @@ img.alignright,
     opacity: 0;
     padding-left: 0;
     position: absolute;
+    -webkit-transition: opacity 0.4s ease-in-out;
     transition: opacity 0.4s ease-in-out;
     width: 180px;
   }
@@ -1451,6 +1454,7 @@ img.alignright,
   text-rendering: auto;
   -webkit-transform: rotate(0);
           transform: rotate(0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;

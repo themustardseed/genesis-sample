@@ -659,6 +659,16 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style.css.map": {
 		"cB": 0,
 		"ft": 8192,
@@ -687,7 +697,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 567203449.64396799,
-	"displayValue": "GH Genesis Sample 2.7.1",
+	"displayValue": "GH Genesis Sample 2.8.0",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-facepalm",
 	"iconImageWasSetByUser": 1

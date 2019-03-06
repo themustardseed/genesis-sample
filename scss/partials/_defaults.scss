@@ -193,7 +193,7 @@ figure {
 	.gallery-columns-#{$colno} .gallery-item {
 		width: 100%/$colno;
 
-		&:nth-child(#{$colno}n + 1), {
+		&:nth-child(#{$colno}n + 1) {
 			clear: left;
 		}
 	}
@@ -227,17 +227,17 @@ input[type="radio"] {
 }
 
 ::-moz-input-placeholder {
-	color: $dark-gray;
+	color: $gs-dark-gray;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: $dark-gray;
+	color: $gs-dark-gray;
 	opacity: 1;
 }
 
 ::placeholder {
-	color: $dark-gray;
+	color: $gs-dark-gray;
 	opacity: 1;
 }
 
